@@ -12,7 +12,7 @@ This project follows **real-world security principles** used in enterprise appli
 
 - 🔑 JWT Authentication  
 - ⏳ Token Expiration (Zero Trust principle)  
-- 👥 Role-Based Access Control (Admin / User)  
+- 👥 Role-Based Access Control (Admin / User)
 - 🔒 Protected Routes  
 - 🚫 Admin-Only Endpoint  
 - 🎯 Custom JWT Error Messages  
@@ -186,6 +186,5 @@ Aspiring Cybersecurity & Backend Developer
 
 ```
 
----
 
 
