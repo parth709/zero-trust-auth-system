@@ -178,7 +178,7 @@ http://127.0.0.1:5000/login-ui
 ## 👨‍💻 Author
 
 **Parth Patil**
-Aspiring Cybersecurity & Backend Developer
+Aspiring Cybersecurity engineer
 
 ---
 
