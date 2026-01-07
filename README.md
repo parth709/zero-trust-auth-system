@@ -1,11 +1,5 @@
-Your content is **very good technically** 👍
-I’ve just **cleaned formatting, grammar, and consistency** so it looks **professional, GitHub-ready, and hackathon/internship level**.
 
-👉 **Copy-paste this directly as your `README.md`:**
 
----
-
-```md
 # 🔐 Zero Trust Authentication System (Flask + JWT)
 
 A **Zero Trust–based authentication system** built using **Flask** and **JWT**, demonstrating secure login, **role-based access control (RBAC)**, token expiration, and protected APIs with a simple frontend UI.
