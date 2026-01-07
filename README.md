@@ -1,37 +1,45 @@
-🔐 Zero Trust Authentication System (Flask + JWT)
-A Zero Trust–based authentication system built using Flask and JWT, demonstrating secure login, role‑based access control (RBAC), token expiration, and protected APIs with a simple frontend UI.
+Your content is **very good technically** 👍
+I’ve just **cleaned formatting, grammar, and consistency** so it looks **professional, GitHub-ready, and hackathon/internship level**.
 
-This project follows real‑world security principles used in enterprise applications.
+👉 **Copy-paste this directly as your `README.md`:**
 
-🚀 Features
-🔑 JWT Authentication
+---
 
-⏳ Token Expiration (Zero Trust principle)
+```md
+# 🔐 Zero Trust Authentication System (Flask + JWT)
 
-👥 Role‑Based Access Control (Admin / User)
+A **Zero Trust–based authentication system** built using **Flask** and **JWT**, demonstrating secure login, **role-based access control (RBAC)**, token expiration, and protected APIs with a simple frontend UI.
 
-🔒 Protected Routes
+This project follows **real-world security principles** used in enterprise applications.
 
-🚫 Admin‑Only Endpoint
+---
 
-🎯 Custom JWT Error Messages
+## 🚀 Features
 
-🖥️ Frontend Login UI (HTML + JS)
+- 🔑 JWT Authentication  
+- ⏳ Token Expiration (Zero Trust principle)  
+- 👥 Role-Based Access Control (Admin / User)  
+- 🔒 Protected Routes  
+- 🚫 Admin-Only Endpoint  
+- 🎯 Custom JWT Error Messages  
+- 🖥️ Frontend Login UI (HTML + JS)  
+- 🛡️ Zero Trust Architecture Concept  
 
-🛡️ Zero Trust Architecture Concept
+---
 
-🧠 Zero Trust Concept Used
-Never trust, always verify
+## 🧠 Zero Trust Concept Used
 
-Every request must carry a valid JWT
+- **Never trust, always verify**
+- Every request must carry a valid JWT
+- No session-based trust
+- Token is verified on **every API call**
+- Role is validated before granting access
 
-No session‑based trust
+---
 
-Token is verified on every API call
+## 🏗️ Project Structure
 
-Role is validated before granting access
-
-🏗️ Project Structure
+```
 
 zero-trust-auth-system/
 │
@@ -41,99 +49,149 @@ zero-trust-auth-system/
 ├── requirements.txt
 └── README.md
 
-⚙️ Tech Stack
-Backend: Flask (Python)
+````
 
-Authentication: Flask‑JWT‑Extended
+---
 
-Frontend: HTML, CSS, JavaScript
+## ⚙️ Tech Stack
 
-Security Model: Zero Trust Architecture
+**Backend:** Flask (Python)  
+**Authentication:** Flask-JWT-Extended  
+**Frontend:** HTML, CSS, JavaScript  
+**Security Model:** Zero Trust Architecture  
 
-🔑 API Endpoints
-1️⃣ Login
-POST /login
-Body
+---
 
+## 🔑 API Endpoints
+
+### 1️⃣ Login
+**POST** `/login`
+
+**Request Body**
+```json
 {
   "username": "admin",
   "password": "admin123"
 }
-Returns JWT access token.
+````
 
-2️⃣ Profile (Protected)
-GET /profile
+**Response:**
+Returns a JWT access token.
+
+---
+
+### 2️⃣ Profile (Protected)
+
+**GET** `/profile`
+
+**Header**
+
+```
 Authorization: Bearer <token>
+```
+
 Accessible by any authenticated user.
 
-3️⃣ Admin Panel (Admin Only)
-GET /admin
+---
+
+### 3️⃣ Admin Panel (Admin Only)
+
+**GET** `/admin`
+
+**Header**
+
+```
 Authorization: Bearer <token>
-Accessible only if role = admin.
+```
 
-🖥️ Frontend UI
-Login with username & password
+Accessible only if `role = admin`.
 
-Token stored in browser storage
+---
 
-Buttons to access:
+## 🖥️ Frontend UI
 
-Profile API
+* Login using username & password
+* Token stored in browser storage
+* Buttons to access:
 
-Admin API
+  * Profile API
+  * Admin API
+* Real-time API response display
 
-Real‑time response display
+---
 
-⏱️ Token Expiration
-Access tokens expire in 1 minute
+## ⏱️ Token Expiration
 
-Expired tokens are rejected automatically
+* Access tokens expire in **1 minute**
+* Expired tokens are rejected automatically
+* User must re-login after expiration
 
-User must re‑login
+---
 
-🚨 Custom Error Handling
-Missing Token
+## 🚨 Custom Error Handling
 
-Invalid Token
+* Missing Token
+* Invalid Token
+* Expired Token
+* Unauthorized Role Access
 
-Expired Token
+All errors return **clean JSON responses**.
 
-Unauthorized Role Access
+---
 
-All errors return clean JSON responses.
+## 🧪 How to Run Locally
 
-🧪 How to Run Locally
-1️⃣ Install Dependencies
+### 1️⃣ Install Dependencies
+
+```bash
 pip install flask flask-jwt-extended
-2️⃣ Run Server
+```
+
+### 2️⃣ Run Server
+
+```bash
 python app.py
-3️⃣ Open Browser
+```
+
+### 3️⃣ Open Browser
+
+```
 http://127.0.0.1:5000/login-ui
-🎯 Use Cases
-Internship / College Project
+```
 
-Cybersecurity Portfolio
+---
 
-Zero Trust Demonstration
+## 🎯 Use Cases
 
-JWT Authentication Practice
+* Internship / College Project
+* Cybersecurity Portfolio
+* Zero Trust Demonstration
+* JWT Authentication Practice
+* Backend Security Learning
 
-Backend Security Learning
+---
 
-📌 Future Improvements
-Refresh tokens
+## 📌 Future Improvements
 
-Database integration
+* Refresh tokens
+* Database integration
+* Password hashing
+* Logout & token revocation
+* Deployment (Docker / Cloud)
 
-Password hashing
+---
 
-Logout & token revocation
+## 👨‍💻 Author
 
-Deployment (Docker / Cloud)
-
-👨‍💻 Author
-Parth Patil
+**Parth Patil**
 Aspiring Cybersecurity & Backend Developer
 
-⭐ If you like this project
-Give it a star ⭐ and feel free to fork 🍴
+---
+
+⭐ If you like this project, give it a **star** and feel free to **fork** 🍴
+
+```
+
+---
+
+
